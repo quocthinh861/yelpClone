@@ -29,7 +29,7 @@ router.get("/getRestaurant/:id", async (req, res) => {
             status: "success",
             rowCount: query.rows.length,
             data: {
-                restaurants: query.rows[0]
+                restaurant: query.rows[0]
             }
         });
 
@@ -96,7 +96,7 @@ router.post("/", async (req, res) => {
             status: "success",
             rowCount: query.rows.length,
             data: {
-                restaurants: query.rows[0]
+                restaurant: query.rows[0]
             }
         });
 
